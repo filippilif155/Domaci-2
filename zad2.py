@@ -36,3 +36,4 @@ l = list(range(10))
 print(filter_prim(lambda num: num % 2 == 0,l))
 l = "asdASdasdD"
 print(filter_prim(lambda x: x.islower(), l))
+asdasfasfaaga
