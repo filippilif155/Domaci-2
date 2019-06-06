@@ -9,3 +9,4 @@ while brojac != 5:
     pomocna_lista.remove(element)
     brojac += 1
 konacna_lista = list(zip(pomocna_lista,pomocna_lista1))
+print(konacna_lista)

@@ -11,7 +11,7 @@ def doors(n):
                     vrata[index] = '1'
                     
         i += 1
-    #print(int(reduce(lambda x, y: x + y, vrata))) #Koja su vrata otvorena 0 -> zatvoreno 1 -> otvoreno
+    #print(int(reduce(lambda x, y: x + y, vrata))) #Koja su vrata otvorena 0 --> zatvoreno 1 --> otvoreno
     return int(reduce(lambda x, y: int(x) + int(y), vrata))
 print(doors(5))
 n = input("Unesite broj vrata:\n")

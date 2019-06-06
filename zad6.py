@@ -58,7 +58,7 @@ def rezultat(lista):
     a = "Buy : " + str(buy) + " " + "Sell : " + str(sell)
     return a
 
-#PETLJA UNOSA I VRACANJE REZULTATA
+#PETLJA UNOSA I REZULTAT
 while(1):
     lista_tacnih_unosa = []
     string = input("Unesite vrijednosti u datom obliku:\n NAZIV (samo velika slova) (razmak) BROJ AKCIJA (prirodan broj) (razmak) CIJENA (broj u dacimalnom zapisu) (razmak) STATUS (B ili S))\nVise podataka mozete unijeti tako sto datu semu unosa odvojite zarezom i u istom obliku unosite sledece podatke\n Kada unesete podatke pritisnite Enter\n \tUNOS PODATAKA:\n ")

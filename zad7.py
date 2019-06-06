@@ -158,7 +158,7 @@ while filtriranje == 'y':
             if kako == 'n':
                 lista = [[ime, ocjena, godina, izdavac, zanr] for (ime, ocjena, godina, izdavac, zanr)  in lista_ispravne_igrice if int(godina) >= int(god)]
                 #Jednostavnije i citljivije je koristiti filter, medjutim, htio sam da predjem i list comprehension u nekom od zadataka. U svakom filtriranju bi se mogla...
-                #...iskoristiti filter funkcija u slicnom obliku kao u liniji 161, medjutim za zanr bi bilo malo komplikovanije, pa je jednostavnije kako je i napisano (liniji 171)
+                #...iskoristiti filter funkcija u slicnom obliku kao u liniji 161, medjutim za zanr bi bilo malo komplikovanije, pa je jednostavnije kako je i napisano (linija 171)
                 #lista = list(filter(lambda x: int(x[2]) >= god ,lista_ispravne_igrice))
             else:
                 lista = [[ime, ocjena, godina, izdavac, zanr] for (ime, ocjena, godina, izdavac, zanr)  in lista_ispravne_igrice if int(godina) <= int(god)]

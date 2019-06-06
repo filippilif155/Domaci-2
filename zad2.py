@@ -18,7 +18,7 @@ print(map_prim(lambda elem: (elem[0], (9 / 5) * elem[1] + 32), city_temp_c))
 a = "asAAAawfs"
 print(map_prim(lambda x: x.upper(), a))
 '''
-         #FILTER
+        #FILTER
 def filter_prim(funct, podatak):
     lista = []
     for i in podatak:

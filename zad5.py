@@ -82,4 +82,4 @@ tag1 = input("Unesite zeljeni tag :\n")
 print(gettg(kod1, tag1))
 ''' Zadatak mozda zahtijeva "objasnjenje" -- Kako tag u sebi moze sadrzati isti tag dobijamo funkciju koja poziva samu
 sebe get_tag_content, dok je funkcija gettg postavljena radi ispunjavanja forme zadate zadatkom... A i zanimljiva mi rekurzija 
-bi pa steta da se brise :D'''
+bi pa steta da se brise :|'''

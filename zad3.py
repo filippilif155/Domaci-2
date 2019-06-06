@@ -7,7 +7,7 @@ class Line:
     def slope(self):
         return (self.B[1] - self.A[1])/(self.B[0] - self.A[0])
 '''
-line = Line((3, 2), (8, 10))
+line = Line((3, 3), (8, 10))
 print(line.distance())
 print(line.slope())
 '''
