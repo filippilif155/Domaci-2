@@ -1,7 +1,0 @@
-['GTA 5', '9.5', '2012', 'RocKstar', 'action crime']
-['The Witcher 3: Wild Hunt - Blood and Wine', '9.8', '2016', 'CD Projekt RED', 'action adventure crime']
-['Red Dead Redemption II', '9.7', '2018', 'RocKstar', 'action adventure crime']
-['God of War', '9.7', '2018', 'SCEA', 'action adventure drama']
-['007 Racing', '5.6', '2000', 'Eutechnyx', 'action adventure']
-["Akiba's Beat", '5.3', '2016', 'Acquire', 'action']
-['Ride to Hell: Retribution', '1.2', '2013', 'Eutechnyx', 'action']

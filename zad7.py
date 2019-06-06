@@ -1,3 +1,4 @@
+#FUNKCIJE ZA PROVJERAVANJE
 def provjera_naziva(string):
     validnost = 1
     if len(string) < 2 or len(string) > 50:
@@ -45,15 +46,16 @@ def provjera_zanra(string):
         if k == len(lista_zanrova) and validnost == 0:
             break
     return validnost
-
+#Global za date zanrove kako bi mogli koristiti u bilo kom dijelu koda a potrebna je vise puta
 global lista_zanrova
 lista_zanrova = ['Action', 'Crime','Adventure', 'Sci-Fi','Drama']
-
+#CITANJE POCETNOG FAJLA
 with open("igrice.txt", "r") as file:
     string = file.read()
 file.close()    
 lista_igrice = string.split("\n")
 lista_ispravne_igrice = []
+#PROVJERA IGRICA ZA POCETNI FAJL
 for elem in lista_igrice:
     pomocna_lista = elem.split(';')
     if len(pomocna_lista) != 5:
@@ -70,13 +72,14 @@ for elem in lista_igrice:
         continue
     pomocna_lista[4] = pomocna_lista[4].lower()
     lista_ispravne_igrice.append(pomocna_lista)
-
 print("LISTA ISPRAVNE",lista_ispravne_igrice)
+#UPIS ISPRAVNO UNESENIH IGRICA U NOVI FAJL 
 f = open("igrice1.txt", "w+")
 for elem in lista_ispravne_igrice:
     f.write(str(elem))
     f.write('\n')
 f.close()
+#NOVI UNOS(I)
 novi_unos = input("Da li zelite da unesete nove igrice? y/n \n")
 while novi_unos == 'y':
     naziv = input('Unesite naziv (ne manje od 2 i vece 50 karaktera):\n')
@@ -112,15 +115,11 @@ while novi_unos == 'y':
             break
     prelazna_lista = [naziv, ocjena, godina, autor, zanr]
     lista_ispravne_igrice.append(prelazna_lista)
-    f = open("igrice1.txt", "a")
-    f.write(str(prelazna_lista))
+    f = open("igrice1.txt", "a")    
+    f.write(str(prelazna_lista))    #Upisivanje u novi fajl
     f.close()
     novi_unos = input("Da li zelite da unesete nove igrice? y/n \n")
-'''
-with open("igrice1.txt", "r") as file:
-    string = file.read()
-file.close()
-'''  
+#DICTIONARY ISPIS U TERMINALU 
 lista_igara = []
 for elem in lista_ispravne_igrice:
     prelazni_dict = {}
@@ -132,6 +131,7 @@ for elem in lista_ispravne_igrice:
     prelazni_dict.update({'Zanr': list(elem_prel[4].split())})
     lista_igara.append(prelazni_dict)
 print(lista_igara)
+#FILTRIRANJE
 filtriranje = input('Da li zelite da filtrirate listu? y/n \n')
 while filtriranje == 'y':
     lista = []
@@ -157,6 +157,9 @@ while filtriranje == 'y':
         if provjera_godine(god) == 1:
             if kako == 'n':
                 lista = [[ime, ocjena, godina, izdavac, zanr] for (ime, ocjena, godina, izdavac, zanr)  in lista_ispravne_igrice if int(godina) >= int(god)]
+                #Jednostavnije i citljivije je koristiti filter, medjutim, htio sam da predjem i list comprehension u nekom od zadataka. U svakom filtriranju bi se mogla...
+                #...iskoristiti filter funkcija u slicnom obliku kao u liniji 161, medjutim za zanr bi bilo malo komplikovanije, pa je jednostavnije kako je i napisano (liniji 171)
+                #lista = list(filter(lambda x: int(x[2]) >= god ,lista_ispravne_igrice))
             else:
                 lista = [[ime, ocjena, godina, izdavac, zanr] for (ime, ocjena, godina, izdavac, zanr)  in lista_ispravne_igrice if int(godina) <= int(god)]
         else:
