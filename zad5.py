@@ -18,7 +18,7 @@ def get_tag_content(kod, tag, broj_oz, brojac, pocetak):
                     n += 1
                     i += 1  
                 if provjera == 0:
-                    lista_str.append((kod[pocetak:brojac].rstrip()).lstrip()) #trazeni string stavljamo u listru
+                    lista_str.append((kod[pocetak:brojac].rstrip()).lstrip()) #trazeni string stavljamo u listu
                     broj_oz = broj_oz - 1
                     brojac = brojac + n
                     if broj_oz != 0:
@@ -76,6 +76,7 @@ def gettg(kod, tag):
 
 with open('html.txt', 'r') as file:
     kod1 = file.read().replace('\n', '')  
+file.close()
 #print(kod1)  
 tag1 = input("Unesite zeljeni tag :\n")
 print(gettg(kod1, tag1))

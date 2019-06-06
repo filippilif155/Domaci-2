@@ -1,0 +1,13 @@
+GTA 5;9.5;2012;RocKstar;Action Crime
+The Witcher 3: Wild Hunt - Blood and Wine;9.8;2016;CD Projekt RED;Action Adventure Crime
+The Last of Us;9.8;1907;Naughty Dog;Action Adventure Drama
+Red Dead Redemption II;9.7;2018;RocKstar;Action Adventure Crime
+God of War;9.7;2018;SCEA;Action Adventure Drama
+Uncharted 4: A Thief's End;9.6;2016;Naughty Dog;Action Adventure Drama Crime
+Mass Effect 2;9,6;2010;Bioware;Action Adventure Sci-Fi
+007 Racing;5.6;2000;Eutechnyx;Action Adventure
+Akiba's Beat;5.3;2016;Acquire;Action
+Ride to Hell: Retribution;1.2;2013;Eutechnyx;Action
+asdasd;9.3;2054;asda;adasd
+a;4.2;2014;asd;asdf
+a;23e23;2018;asd;asd asd
